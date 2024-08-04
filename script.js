@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         container.append(columnHeader);
     }
 
-    for (let row = 1; row <= 25; row++) {
+    for (let row = 1; row <= 30; row++) {
         let rowHeader = document.createElement("div");
         rowHeader.className = `slno sticky2 row${row}`;
         container.append(rowHeader);
