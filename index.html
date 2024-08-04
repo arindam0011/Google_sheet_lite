@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Google Sheet</title>
+  <link type="image/png" sizes="40x32" rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div id="manue-nav">
+    <div id="cell-name" contenteditable="true"></div>
+    <!-- fonts -->
+    <select name="text-font-styles" id="text-fonts">
+
+    </select>
+
+
+    <!-- font weight -->
+    <div id="font-weight">
+      <i id="bold" class="fa fa-bold"></i>
+      <i id="italic" class="fa fa-italic"></i>
+      <i id="underline" class="fa fa-underline"></i>
+      <div id="font-color-div">
+        <i id="font-color-icon" class="fa-solid fa-a"></i>
+        <input type="color" id="font-color">
+      </div>
+      <div id="font-color-div">
+        <i id="font-color-icon" aria-disabled="true" class="font-color-icon2 fa-solid fa-fill-drip"></i>
+        <input type="color" class="font-color2" id="font-color" value="#000000">
+      </div>
+    </div>
+
+
+    <!-- text case -->
+    <div id="text-case">
+      <p id="caseIcon">Aa</p>
+      <select id="case">
+        <option value="Normal">Normal</option>
+        <option value="upper">UPPERCASE</option>
+        <option value="lower">lowercase</option>
+        <option value="capitalize">CapitalizeEachWord</option>
+        <option value="sentence">Sentencecase</option>
+      </select>
+      <i id="sort" class="fa fa-sort-alpha-down"></i>
+      <i id="sortNum" class="fa-solid fa-arrow-down-1-9"></i>
+    </div>
+
+    <!-- font size -->
+    <div id="font-size">
+      <i id="minus" class="fa fa-minus"></i>
+      <input type="text" id="font-size-input" value="11">
+      <i id="plus" class="fa fa-plus"></i>
+    </div>
+
+    <!-- text-align -->
+    <div id="text-align">
+      <i id="left" class="fa fa-align-left"></i>
+      <i id="center" class="fa fa-align-center"></i>
+      <i id="right" class="fa fa-align-right"></i>
+      <i id="justify" class="fa fa-align-justify"></i>
+    </div>
+    <!-- text-align-vircically -->
+    <div id="text-align-vircically">
+      <i id="top" class="fa-solid fa-arrows-up-to-line"></i>
+      <i id="middle" class="fa fa-arrow-down-up-across-line"></i>
+      <i id="bottom" class="fa-solid fa-arrows-down-to-line"></i>
+    </div>
+
+    <!-- borders -->
+    <Div id="container-borders">
+      <h5>Borders</h5>
+      <div id="border-option">
+        <div class="custom-dropdown">
+        <select id="borders">
+          <option value="Border" id="border0" class="border">Borders</option>
+          <option value="none" id="border1" class="border">None</option>
+          <option value="top" id="border2" class="border">Top</option>
+          <option value="bottom" id="border3" class="border">Bottom</option>
+          <option value="left" id="border4" class="border">Left</option>
+          <option value="right" id="border5" class="border">Right</option>
+          <option value="all" id="border6" class="border">All</option>
+        </select>
+      </div>
+      <div id="border-color-div">
+        <input type="color" id="border-color">
+      </div>
+      <div id="border-size">
+        <input type="number" id="border-size-input" value="1">
+      </div>
+      </div>
+      
+    </Div>
+
+  </div>
+
+
+  </div>
+  <div id="container">
+
+  </div>
+  <div>
+    <button id="add-cell">Add</button> <input type="number" id="add-cell-no">
+    <Span>More rows at bottom!</Span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
